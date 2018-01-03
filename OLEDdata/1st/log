@@ -1,0 +1,582 @@
+************************************
+****    Reading Input Files     ****
+************************************
+Reading GA.inp: ga.inp
+
+Start reading $s-generator
+Building Mode is set to 1
+Will  build 3 layers
+The seed is given by user: seed.xyz
+The library is given by user: /export/zimmerman/shaoyulu/S-Generator/runs/back_sourceCodeforSGA/version13_parrSearch/lib
+Start reading Reference Electrode...
+The ref Anode(eV) = -7.650000 and Cathode(eV) = -1.210000
+
+Start reading $fitness
+Reference molecule is given by user:ref.xyz
+Using file fitness.inp as fitness function
+
+Start reading subblock $qc_method in $fitness
+unrecognized setting for DFT calculation
+
+Start reading $ga
+
+Start reading subblock $selection         in $ga
+
+Start reading $output
+Output as Molden Format
+Output as Excel Format
+******* Finish Reading GA.inp File *******
+
+
+new label for seed2.xyz in library would be 1
+new label for seed3.xyz in library would be 2
+new label for seed1.xyz in library would be 3
+./Scratch/features/1.xyz
+./Scratch/features/2.xyz
+./Scratch/features/3.xyz
+
+find 3 core building blocks in the library
+new label for frag8.xyz in library would be 4
+new label for frag6.xyz in library would be 5
+new label for frag9.xyz in library would be 6
+new label for frag2.xyz in library would be 7
+new label for frag4.xyz in library would be 8
+new label for frag10.xyz in library would be 9
+new label for frag14.xyz in library would be 10
+new label for frag3.xyz in library would be 11
+new label for frag12.xyz in library would be 12
+new label for frag15.xyz in library would be 13
+new label for frag1.xyz in library would be 14
+new label for frag7.xyz in library would be 15
+new label for frag13.xyz in library would be 16
+new label for frag5.xyz in library would be 17
+new label for frag11.xyz in library would be 18
+./Scratch/features/4.xyz
+./Scratch/features/5.xyz
+./Scratch/features/6.xyz
+./Scratch/features/7.xyz
+./Scratch/features/8.xyz
+./Scratch/features/9.xyz
+./Scratch/features/10.xyz
+./Scratch/features/11.xyz
+./Scratch/features/12.xyz
+./Scratch/features/13.xyz
+./Scratch/features/14.xyz
+./Scratch/features/15.xyz
+./Scratch/features/16.xyz
+./Scratch/features/17.xyz
+./Scratch/features/18.xyz
+find 15 multiple handles building block in the library
+new label for cap8.xyz in library would be 19
+new label for cap4.xyz in library would be 20
+new label for cap5.xyz in library would be 21
+new label for cap3.xyz in library would be 22
+new label for cap11.xyz in library would be 23
+new label for cap12.xyz in library would be 24
+new label for cap13.xyz in library would be 25
+new label for cap9.xyz in library would be 26
+new label for cap2.xyz in library would be 27
+new label for cap6.xyz in library would be 28
+new label for cap7.xyz in library would be 29
+new label for cap14.xyz in library would be 30
+new label for cap1.xyz in library would be 31
+new label for cap10.xyz in library would be 32
+./Scratch/features/19.xyz
+./Scratch/features/20.xyz
+./Scratch/features/21.xyz
+./Scratch/features/22.xyz
+./Scratch/features/23.xyz
+./Scratch/features/24.xyz
+./Scratch/features/25.xyz
+./Scratch/features/26.xyz
+./Scratch/features/27.xyz
+./Scratch/features/28.xyz
+./Scratch/features/29.xyz
+./Scratch/features/30.xyz
+./Scratch/features/31.xyz
+./Scratch/features/32.xyz
+find 14 single handle building block in the library
+
+
+Reading reference provided by user: 
+Reading MOPAC settings
+
+METHOD  PM7
+method for mopac isPM7
+WALLTIME   60M
+walltime for mopac is 60M
+
+GNORM  500               
+gnorm for mopac is 500.000000
+UNRESTRICTED   Off
+********* All inputs are read ********
+size of hash_all:17
+size of hash_pop:9
+******************************
+*****  Starting GA runs  *****
+*******************************
+run newstart 
+***************************************
+The 0-th Generation for ETL
+successfully generate cArray
+is Best Restart mode on ? 0
+The gene of 1st round will be generated randomly
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 3(4-1(11-1(21-1)))(8-2(5-1(26-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0001
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0002
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 1(7-1(4-1(22-1)))(16-2(5-1(20-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0003
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 1(13-1(17-1(25-1)))(13-2(7-1(23-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0004
+successfully generate a mopac input
+****************************************
+
+mopac cal
+Generating SBATCH  script for mopac jobs ...
+Submitted batch job 1286824
+mopac1 is done  mopac2 is done  mopac3 is done  mopac4 is done  Done with MOPAC calculation for this generation!
+
+*******The 1-th individual in this generation*******
+3(4-1(11-1(21-1)))(8-2(5-1(26-1)))
+HOMO(ev) : -7.763000
+LUMO(eV) : -1.771000
+
+*******The 2-th individual in this generation*******
+1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+HOMO(ev) : -8.105000
+LUMO(eV) : -1.569000
+
+*******The 3-th individual in this generation*******
+1(7-1(4-1(22-1)))(16-2(5-1(20-1)))
+HOMO(ev) : -8.260000
+LUMO(eV) : -1.459000
+
+*******The 4-th individual in this generation*******
+1(13-1(17-1(25-1)))(13-2(7-1(23-1)))
+HOMO(ev) : -7.281000
+LUMO(eV) : -1.333000
+calculating ETL score ....
+51.416375
+calculating ETL score ....
+323.389566
+calculating ETL score ....
+581.421283
+calculating ETL score ....
+120.905232
+
+Sorting by ETL score...
+1(7-1(4-1(22-1)))(16-2(5-1(20-1)))HTL = 11.391991 HOST = 176.152708 ETL = 581.421283
+1(6-1(4-1(28-1)))(11-2(10-1(32-1)))HTL = 27.190479 HOST = 260.898457 ETL = 323.389566
+1(13-1(17-1(25-1)))(13-2(7-1(23-1)))HTL = 118.068951 HOST = 545.987062 ETL = 120.905232
+3(4-1(11-1(21-1)))(8-2(5-1(26-1)))HTL = 51.514143 HOST = 269.830849 ETL = 51.416375
+AverageScore 269.283114 ; MaxScore 581.421283
+run RWS
+wheel 1 0.539786
+wheel 2 0.840018
+wheel 3 0.952266
+wheel 4 1.000000
+0.640950
+0.161824
+0.747498
+0.911362
+Done selection operation
+***************************************
+The 0-th Generation for HTL
+successfully generate cArray
+is Best Restart mode on ? 0
+The gene of 1st round will be generated randomly
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 1(8-1(11-1(21-1)))(18-2(17-1(25-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0001
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 2(5-1(6-1(32-1)))(14-2(4-1(23-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0002
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0003
+successfully generate a mopac input
+successfully generate cArray
+generating gene based on cArray
+******unique entry ******
+randomly create a molecule: 2(8-1(18-1(20-1)))(12-2(14-1(28-1)))
+A new gene generated 
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0004
+successfully generate a mopac input
+****************************************
+
+mopac cal
+Generating SBATCH  script for mopac jobs ...
+Submitted batch job 1286828
+mopac1 is done  mopac2 is done  mopac3 is done  mopac4 is done  Done with MOPAC calculation for this generation!
+
+*******The 1-th individual in this generation*******
+1(8-1(11-1(21-1)))(18-2(17-1(25-1)))
+HOMO(ev) : -7.802000
+LUMO(eV) : -1.959000
+
+*******The 2-th individual in this generation*******
+2(5-1(6-1(32-1)))(14-2(4-1(23-1)))
+HOMO(ev) : -8.453000
+LUMO(eV) : -1.702000
+
+*******The 3-th individual in this generation*******
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+HOMO(ev) : -7.897000
+LUMO(eV) : -0.959000
+
+*******The 4-th individual in this generation*******
+2(8-1(18-1(20-1)))(12-2(14-1(28-1)))
+HOMO(ev) : -8.361000
+LUMO(eV) : -1.532000
+calculating HTL score ....
+19.193327
+calculating HTL score ....
+0.452622
+calculating HTL score ....
+477.643929
+calculating HTL score ....
+2.919345
+
+Sorting by HTL score...
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))HTL = 477.643929 HOST = 608.937283 ETL = 467.995260
+1(8-1(11-1(21-1)))(18-2(17-1(25-1)))HTL = 19.193327 HOST = 96.673109 ETL = 7.660472
+2(8-1(18-1(20-1)))(12-2(14-1(28-1)))HTL = 2.919345 HOST = 87.438464 ETL = 424.156602
+2(5-1(6-1(32-1)))(14-2(4-1(23-1)))HTL = 0.452622 HOST = 28.796771 ETL = 141.650275
+AverageScore 125.052306 ; MaxScore 477.643929
+run RWS
+wheel 1 0.954888
+wheel 2 0.993259
+wheel 3 0.999095
+wheel 4 1.000000
+0.888861
+0.844394
+0.581613
+0.003830
+Done selection operation
+The length of pNext List4
+The length of pCurrent List4
+
+========Reference HOST updated=======
+The Reference HOST(HOMO/LUMO) is set to 
+-7.897000/-0.959000 based on current genes 
+=====================================
+  
+
+======This Generation(0-th)=====
+Best HTL :   2(5-1(9-1(24-1)))(12-2(16-1(21-1)))   -7.897000/-0.959000  477.643929
+Best HOST : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))   -7.897000/-0.959000  608.937283
+Best ETL :   1(7-1(4-1(22-1)))(16-2(5-1(20-1)))   -8.260000/-1.459000  581.421283
+Total OLED score = 1668.002495
+================================
+
+***************************************
+The 1-th Generation for ETL
+successfully generate cArray
+is Best Restart mode on ? 0
+Current length of pNext List: 0
+1
+ptr1 and ptr2  => 1(6-1(4-1(28-1)))(11-2(10-1(32-1)))  1(7-1(4-1(22-1)))(16-2(5-1(20-1)))
+Applying genetic operator to 1-th pair 
+parent1 : 1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+parent2 : 1(7-1(4-1(22-1)))(16-2(5-1(20-1)))
+
+Get random number: 0.463911; Compared with crossover rate 0.900000
+********Crossover and Mutation:********** 
+1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+1(7-1(4-1(22-1)))(16-2(5-1(20-1)))
+determine splice point: 2
+parent1(crossover) : 1(6-1(4-1(22-1)))(11-2(5-1(20-1)))
+parent2(crossover) : 1(7-1(4-1(28-1)))(16-2(10-1(32-1)))
+find unique offsprings
+ptr1 is under mutation
+mutation layer: 2
+new mutation ptr1 : 1(6-1(17-1(20-1)))(11-2(17-1(30-1)))
+ptr2 is under mutation
+mutation layer: 0
+new mutation ptr2 : 3(4-1(8-1(22-1)))(9-2(11-1(30-1)))
+save new molecules to the list
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0001
+successfully generate a mopac input
+Done gen_node()
+
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0002
+successfully generate a mopac input
+Done gen_node()
+
+1
+ptr1 and ptr2  => 1(6-1(4-1(28-1)))(11-2(10-1(32-1)))  1(13-1(17-1(25-1)))(13-2(7-1(23-1)))
+Applying genetic operator to 2-th pair 
+parent1 : 1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+parent2 : 1(13-1(17-1(25-1)))(13-2(7-1(23-1)))
+
+Get random number: 0.472288; Compared with crossover rate 0.900000
+********Crossover and Mutation:********** 
+1(6-1(4-1(28-1)))(11-2(10-1(32-1)))
+1(13-1(17-1(25-1)))(13-2(7-1(23-1)))
+determine splice point: 3
+parent1(crossover) : 1(6-1(4-1(25-1)))(11-2(10-1(23-1)))
+parent2(crossover) : 1(13-1(17-1(28-1)))(13-2(7-1(32-1)))
+find unique offsprings
+ptr1 is under mutation
+mutation layer: 1
+new mutation ptr1 : 1(13-1(8-1(25-1)))(17-2(15-1(25-1)))
+ptr2 is under mutation
+mutation layer: 1
+new mutation ptr2 : 1(5-1(7-1(31-1)))(13-2(17-1(25-1)))
+save new molecules to the list
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0003
+successfully generate a mopac input
+Done gen_node()
+
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0004
+successfully generate a mopac input
+Done gen_node()
+
+****************************************
+
+mopac cal
+Generating SBATCH  script for mopac jobs ...
+Submitted batch job 1286832
+mopac1 is done  mopac2 is done  mopac3 is done  mopac4 is done  Done with MOPAC calculation for this generation!
+
+*******The 1-th individual in this generation*******
+1(6-1(17-1(20-1)))(11-2(17-1(30-1)))
+HOMO(ev) : -6.944000
+LUMO(eV) : -1.491000
+
+*******The 2-th individual in this generation*******
+3(4-1(8-1(22-1)))(9-2(11-1(30-1)))
+HOMO(ev) : -7.987000
+LUMO(eV) : -1.628000
+
+*******The 3-th individual in this generation*******
+1(13-1(8-1(25-1)))(17-2(15-1(25-1)))
+HOMO(ev) : -7.575000
+LUMO(eV) : -2.043000
+
+*******The 4-th individual in this generation*******
+1(5-1(7-1(31-1)))(13-2(17-1(25-1)))
+HOMO(ev) : -7.392000
+LUMO(eV) : -1.431000
+calculating ETL score ....
+15.137628
+calculating ETL score ....
+208.480503
+calculating ETL score ....
+1.581731
+calculating ETL score ....
+146.038275
+
+Sorting by ETL score...
+3(4-1(8-1(22-1)))(9-2(11-1(30-1)))HTL = 44.371080 HOST = 315.633989 ETL = 208.480503
+1(5-1(7-1(31-1)))(13-2(17-1(25-1)))HTL = 146.079985 HOST = 630.261794 ETL = 146.038275
+1(6-1(17-1(20-1)))(11-2(17-1(30-1)))HTL = 3.654053 HOST = 99.302156 ETL = 15.137628
+1(13-1(8-1(25-1)))(17-2(15-1(25-1)))HTL = 14.619334 HOST = 60.928392 ETL = 1.581731
+AverageScore 92.809534 ; MaxScore 208.480503
+run RWS
+wheel 1 0.561582
+wheel 2 0.954963
+wheel 3 0.995739
+wheel 4 1.000000
+0.294688
+0.746484
+0.197022
+0.149541
+Done selection operation
+***************************************
+The 1-th Generation for HTL
+successfully generate cArray
+is Best Restart mode on ? 0
+Current length of pNext List: 0
+ptr1 and ptr2  => 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))  2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+Applying genetic operator to 1-th pair 
+parent1 : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+parent2 : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+
+Get random number: 0.495906; Compared with crossover rate 0.900000
+********Crossover and Mutation:********** 
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+determine splice point: 1
+parent1(crossover) : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+parent2(crossover) : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+Data exist ! 
+Data exist ! 
+ptr1 is under mutation
+mutation layer: 0
+new mutation ptr1 : 2(5-1(7-1(27-1)))(8-2(8-1(22-1)))
+Data exist ! 
+Data exist ! 
+newcode 2 is already in the list
+mutation layer: 1
+new mutation ptr2 : 2(13-1(17-1(24-1)))(18-2(17-1(21-1)))
+save new molecules to the list
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0001
+successfully generate a mopac input
+Done gen_node()
+
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0002
+successfully generate a mopac input
+Done gen_node()
+
+ptr1 and ptr2  => 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))  2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+Applying genetic operator to 2-th pair 
+parent1 : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+parent2 : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+
+Get random number: 0.824409; Compared with crossover rate 0.900000
+********Crossover and Mutation:********** 
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+determine splice point: 1
+parent1(crossover) : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+parent2(crossover) : 2(5-1(9-1(24-1)))(12-2(16-1(21-1)))
+Data exist ! 
+Data exist ! 
+ptr1 is under mutation
+mutation layer: 2
+new mutation ptr1 : 2(5-1(15-1(31-1)))(12-2(10-1(32-1)))
+ptr2 is under mutation
+mutation layer: 0
+new mutation ptr2 : 3(16-1(11-1(21-1)))(17-2(6-1(32-1)))
+save new molecules to the list
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0003
+successfully generate a mopac input
+Done gen_node()
+
+Done installation
+finish 1st optimization by MM:
+generating inpfile: m0004
+successfully generate a mopac input
+Done gen_node()
+
+****************************************
+
+mopac cal
+Generating SBATCH  script for mopac jobs ...
+Submitted batch job 1286837
+mopac1 is done  mopac2 is done  mopac3 is done  mopac4 is done  Done with MOPAC calculation for this generation!
+
+*******The 1-th individual in this generation*******
+2(5-1(7-1(27-1)))(8-2(8-1(22-1)))
+HOMO(ev) : -8.070000
+LUMO(eV) : -1.499000
+
+*******The 2-th individual in this generation*******
+2(13-1(17-1(24-1)))(18-2(17-1(21-1)))
+HOMO(ev) : -7.022000
+LUMO(eV) : -1.949000
+
+*******The 3-th individual in this generation*******
+2(5-1(15-1(31-1)))(12-2(10-1(32-1)))
+HOMO(ev) : -7.772000
+LUMO(eV) : -1.640000
+
+*******The 4-th individual in this generation*******
+3(16-1(11-1(21-1)))(17-2(6-1(32-1)))
+HOMO(ev) : -7.075000
+LUMO(eV) : -1.091000
+calculating HTL score ....
+46.519909
+calculating HTL score ....
+1.033695
+calculating HTL score ....
+92.619405
+calculating HTL score ....
+45.763771
+
+Sorting by HTL score...
+2(5-1(15-1(31-1)))(12-2(10-1(32-1)))HTL = 92.619405 HOST = 449.717352 ETL = 147.613790
+2(5-1(7-1(27-1)))(8-2(8-1(22-1)))HTL = 46.519909 HOST = 353.566391 ETL = 456.718741
+3(16-1(11-1(21-1)))(17-2(6-1(32-1)))HTL = 45.763771 HOST = 251.793996 ETL = 47.683484
+2(13-1(17-1(24-1)))(18-2(17-1(21-1)))HTL = 1.033695 HOST = 23.236755 ETL = 0.525405
+AverageScore 46.484195 ; MaxScore 92.619405
+run RWS
+wheel 1 0.498123
+wheel 2 0.748315
+wheel 3 0.994441
+wheel 4 1.000000
+0.422906
+0.155044
+0.634939
+0.441839
+Done selection operation
+The length of pNext List4
+The length of pCurrent List4
+
+========Reference HOST updated=======
+The Reference HOST(HOMO/LUMO) is set to 
+-7.392000/-1.431000 based on current genes 
+=====================================
+  
+
+======This Generation(1-th)=====
+Best HTL :   2(5-1(15-1(31-1)))(12-2(10-1(32-1)))   -7.772000/-1.640000  92.619405
+Best HOST : 1(5-1(7-1(31-1)))(13-2(17-1(25-1)))   -7.392000/-1.431000  630.261794
+Best ETL :   3(4-1(8-1(22-1)))(9-2(11-1(30-1)))   -7.987000/-1.628000  208.480503
+Total OLED score = 931.361702
+================================
+
+Total size of databanks : 40
+Done here

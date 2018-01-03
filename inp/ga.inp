@@ -1,0 +1,52 @@
+$S-Generator
+  Mode       1       #1: for OLED  (build from a seed, identical branches)
+                    #2: for TM cats
+                    #3: for chain-like molecule
+  Layers     4       #fix to 3 layers
+                    # or: 3-4   min:3 max:4
+  Seed       seed.xyz
+# Reference  ref.xyz
+  Library     /export/zimmerman/shaoyulu/S-Generator/runs/back_sourceCodeforSGA/version13_parrSearch/lib
+   best_restart Off
+   High_Symm   On
+   Reference_Electrode  -7.65  -1.21
+   Jobtype Slurm
+   WriteFragScore  On
+   FragScoreThreshold  800
+$S-Generator End
+
+$Fitness
+  Reference         ref.xyz
+  def_file         fitness.inp           #string
+  $QC_Method
+#   DFT             On  
+    DFT/MOPAC.inp         
+   Semi_Empirical      On
+#  DFT/MOPAC.inp
+  $QC_Method End
+$Fitness End
+
+$GA
+  Population_size  10                  #int
+  Termination       1                  #int
+  CrossoverRate    0.90                   #double      
+  MutationRate     0.80                 #double
+  $Selection        
+    Method   RWS
+#    Method   SUS
+#   Method            B_Tournament
+#    Method            L_Rank
+#   Method    E_Rank 
+#   Parameter   0.5       #rate of L_Rank
+#  Parameter     0.200     #base of E_Rank    
+  $Selection End     
+$GA End
+
+$Output
+  Level_of_OPT     QC 
+  Molden_Format    On
+  Excel_Format     On
+$Output End
+
+
+

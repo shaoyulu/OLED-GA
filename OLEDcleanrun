@@ -1,0 +1,17 @@
+rm -rf best*
+rm -rf data*
+rm -rf OLED_XYZ
+mkdir OLED_XYZ
+cd Scratch 
+rm -rf mm mopac
+cd ..
+./OLEDsearch.exe > log 
+rm -rf slurm*
+mv best* OLEDdata/
+mv log OLEDdata/
+cp data OLEDdata/
+cp -avf OLED_XYZ OLEDdata/
+cd OLED_XYZ
+rm -rf *
+cd ..
+

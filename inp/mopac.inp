@@ -1,0 +1,6 @@
+#MOPAC input
+METHOD  PM7
+WALLTIME   60M
+#Use_AUX   Off
+GNORM  10                #geometry optimization termination criteria
+UNRESTRICTED   Off

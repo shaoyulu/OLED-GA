@@ -1,0 +1,41 @@
+$Binding_Energy
+//   Def    BindingEnergy        
+   Ligand  L1,L2
+   Target          20       #default is value of reference catalyst, unit is kcal/mol
+   Coefficient          5
+   Weight          0.5
+$Binding_Energy End
+
+#BindingEnergy is refers to Oxidative Addition or Reductive Elimination (energy change of reaction)
+#or Binding Energy between cat. and a single (***neutral***) ligand  
+
+$H_Affinity
+//   Def      H_Affinity
+   Proton     10
+   Target          20              
+   Coefficient         5
+   Weight          0.25
+$H_Affinity End
+
+#$Hydricity
+#   def    Hydricity
+#   Hydride    L1
+#   Target          20
+#   Coefficient          5
+#   Weight          0.25
+#$Hydricity End
+
+#$F4
+#  def= GSM(ADD, BREAK)
+#  ADD = L1,L2
+#  BREAK = TM, L1
+#  BREAK = TM, L2
+#  Target(kcal/mol)      15
+#  Weight           1
+#$F4 End
+
+#$Ref
+#Hydride -0.4618154440
+#H2  -1.1754842563
+#Proton -1.0             #fix me, others B3LYP
+#$Ref End 

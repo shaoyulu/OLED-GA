@@ -1,0 +1,10 @@
+rm -f log
+rm -f record
+rm -f best
+rm -f average
+rm -f bestsofar
+rm -f debug.qsh.* 
+#rm -rf ./lib/endpoint/basis
+rm -rf ./Scratch/mm
+rm -rf ./Scratch/mopac
+#rm -rf ./Scratch/ref

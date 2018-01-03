@@ -1,0 +1,304 @@
+enhanced_init_mut.cpp:        cout << "cluster " << i << " : " << cluster_info[i]->size() << endl;
+enhanced_init_mut.cpp:    int pool = pInp->inp_ga.pop_size;
+enhanced_init_mut.cpp:    int num_pick_each_cluster = pool/cluster_info.size();
+enhanced_init_mut.cpp:    for (int i=0; i< cluster_info.size(); i++)
+enhanced_init_mut.cpp:         int random_idx = Utils::randomi(cluster_info[i]->size());
+enhanced_init_mut.cpp:    for (int i =0; i < cluster_info.size() && found != 1; i++)
+enhanced_init_mut.cpp:       int size_cluster = cluster_info[i]->size();
+enhanced_init_mut.cpp:       for (int j =0; j < size_cluster; j++)
+enhanced_init_mut.cpp:    int cluster_size = cluster_info[cluster]->size();
+enhanced_init_mut.cpp:    while (exist && count < cluster_size)    
+enhanced_init_mut.cpp:    int random_idx = Utils::randomi(cluster_size);
+gcode.cpp:   int nbranches = tok_line.size();
+gcode.cpp://  bblock.nbranches = int(bblock.xyzw.size());
+gcode.cpp://  bblock.name.resize(bblock.natoms);
+gcode.cpp://  bblock.coords.resize(3*bblock.natoms);
+gcode.cpp:    bblock.label_h.resize(bblock.natoms);
+gcode.cpp://  bblock.name.resize(bblock.natoms);
+gcode.cpp://  bblock.coords.resize(3*bblock.natoms);
+gcode.cpp:  bblock.label_h.resize(bblock.natoms);
+gcode.cpp:   for (int i=0; i< cArray.size(); i++)
+gcode.cpp:   cout << cArray[i].label << "\t" << cArray[i].tag << "\t" << cArray[i].plug << "\t" << cArray[i].acceptor << "\t" << cArray[i].layer << "\t" << cArray[i].xyzw.size()<< endl;  
+gcode.cpp:  while (parent.xyzw.size()!= 0)
+gcode.cpp:  if ((i < nlayers) && (parent.xyzw.size() !=0))
+gcode.cpp:   int tag = cArray[parent.c_index].xyzw.size() - parent.xyzw.size() + 1;
+gcode.cpp:   bblock.c_index = int(cArray.size());
+gcode.cpp:  else if ((i == nlayers) && (parent.xyzw.size() != 0))
+gcode.cpp:    int tag = cArray[parent.c_index].xyzw.size() - parent.xyzw.size() + 1;
+gcode.cpp:    bblock.c_index = int(cArray.size());
+gcode.cpp:    cout << tmp.size() << endl;
+gcode.cpp://      node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size()) +1;
+gcode.cpp:      if (tmp.back().xyzw.size() != 1)
+gcode.cpp://         node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size()) +1;
+gcode.cpp://      node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size())+1;
+gcode.cpp://      node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size()) + 1;
+gcode.cpp:       if (tmp.back().xyzw.size() != 1)
+gcode.cpp://          node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size()) + 1;
+gcode.cpp://       node.tag = tmp.back().nbranches - int(tmp.back().xyzw.size()) + 1;
+gcode.cpp:   node.c_index = int(cArray.size());
+gcode.cpp:  for (size_t i=0; i< cArray.size(); i++)
+gcode.cpp:      node.c_index = int(cArray.size())-1;
+gcode.cpp:  for (size_t i=0; i< cArray.size(); i++)
+gcode.cpp:   while (!q.empty() && result.size()!=total)
+gcode.cpp:    int index = int (cArray.size())-1;
+gcode.cpp: vector<int> addorder(cArray.size());  
+gcode.cpp:        addorder[(*it).c_index] = int(newpos.size())-1;
+gcode.cpp:    int n = int(l1nam.size());
+gcode.cpp:      addorder[(*it).c_index] = int(newpos.size())-1;
+gcode.cpp:     addorder[(*it).c_index] = int(newpos.size())-1;
+gcode.cpp:   anames.resize(natoms);
+gcode.cpp:   coords.resize(3*natoms);
+gcode.cpp:   xyzfile << anames.size() << endl;
+gcode.cpp:   for (size_t i=0; i < anames.size(); i++)
+genetic.cpp:   for (size_t i=0; i< pNode->data.natoms; i++)
+genetic.cpp:   int popsize = pInp->inp_ga.pop_size;
+genetic.cpp:   int size = 2*(ngen*popsize) + 1;
+genetic.cpp:   cout << "size of hash_all:" << size << endl; 
+genetic.cpp:   genehash_all.resize(size);
+genetic.cpp:   size = 2*popsize + 1;
+genetic.cpp:   cout << "size of hash_pop:" << size << endl;
+genetic.cpp:   genehash_pop.resize(size);
+genetic.cpp:   hash_record.resize(2*NUM_ALL_PERM+1);
+genetic.cpp:  long size = hashtable.size();
+genetic.cpp:  long key = BKDRHash(str) % size;
+genetic.cpp:   long size = hash_record.size();
+genetic.cpp:   long key = BKDRHash(pNode->data.gene) % size;
+genetic.cpp:   long size = hashtable.size();
+genetic.cpp:   long key = BKDRHash(genecode) % size;
+genetic.cpp:   long size = hash_record.size();
+genetic.cpp:   cout << size << endl;
+genetic.cpp:   long key = BKDRHash(genecode) % size;
+genetic.cpp:  int splice1 = Utils::randomi(splice_1.size()); 
+genetic.cpp:  int splice2 = Utils::randomi(splice_2.size());
+genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+genetic.cpp:   int nextra = pool%2;    // if odd pop_size
+genetic.cpp:  int pool = pInp->inp_ga.pop_size;
+genetic.cpp:    int pool = pInp->inp_ga.pop_size;
+genetic.cpp:    int right = wheel.size()-1;
+genetic.cpp:   int  pool = pInp->inp_ga.pop_size;
+genetic.cpp:   double stepsize = wheel.back()/pool;
+genetic.cpp:      random += stepsize;
+genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+genetic.cpp:   double stepsize = wheel.back()/pool;
+genetic.cpp:     random += stepsize;
+genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+genetic.cpp:   double stepsize = wheel.back()/pool;
+genetic.cpp:     random += stepsize;
+genetic.cpp:    int pool = pInp->inp_ga.pop_size;
+genetic.cpp://  int pool = pInp->inpga.pop_size();  
+genetic.cpp:   int bits = int(offspring.size());
+genetic.cpp:   int bits = int(string.size());
+genetic.cpp:     int gene_bits = int(gene.size());
+genetic.cpp:  parents.resize(2);
+genetic.cpp:  offsprings.resize(2);
+genetic.cpp:  ptr_array.resize(pInp->inp_ga.pop_size);
+genetic.cpp:  prob_array.resize(pInp->inp_ga.pop_size);
+genetic.cpp:  select_list.resize(pInp->inp_ga.pop_size);
+genetic.cpp:  permutation.resize(pInp->inp_ga.pop_size); 
+genetic.cpp:  size_t ncats = target_list.size();
+genetic.cpp:  size_t gene_bits = offspring.size();
+genetic.cpp:  for (size_t i=0; i < ncats; i++)
+genetic.cpp:      for (size_t j=1; (j<gene_bits) && (status == 0); j++)
+genetic.cpp:  size_t ncats = target_list.size();
+genetic.cpp:  size_t nvars = rcodes.size();
+genetic.cpp:  for (size_t i=0; i < ncats; i++)
+genetic.cpp:      for (size_t j=0; (j < nvars) && (status == 0) ; j++)
+genetic.cpp:   for (size_t i=0; i < pNode->natoms; i++) frezlist[i]=0;
+genetic.cpp:   for (size_t i =0; i< joint.size(); i++)
+genetic.cpp:      for(size_t j=0; j< joint[i].size(); j++)
+genetic.cpp:   for (int i=0; i< pInp->inp_ga.pop_size; i++)
+genetic.cpp:  int pool = pInp->inp_ga.pop_size;
+genetic.cpp:   size_t s = score_list.size();
+genetic.cpp:   for(size_t j=0; j<s; j++)
+genetic.cpp://  while (i != pInp->inp_ga.pop_size)
+genetic.cpp:  while (i != pInp->inp_ga.pop_size)
+genetic.cpp:   Mopac::mopac_genqsh(filedir, joblist);   //hard-coded for 0-gen case (joblist.size() = pop_size)
+genetic.cpp:   for(size_t i = 0; i < pRef->natoms; i++)
+genetic.cpp:    for (size_t j=0; j < pNode->natoms; j++)
+genetic.cpp:             for (size_t i=0; i < pRef->natoms; i++)
+genetic.cpp:          for (size_t i=0; i < pNode->natoms; i++)
+genetic.cpp:        size_t size = tok_line.size();
+genetic.cpp:        for (size_t i=0; i < size; i++)
+genetic.cpp:  for (size_t i = 0; i < pRef->data.natoms; i++)
+genetic.cpp:    for (size_t i = 0; i < pRef->data.natoms; i++)
+genetic.cpp:    genehash_pop.resize(2*pInp->inp_ga.pop_size+1);
+icoord.cpp:int ICoord::alloc(int size){
+icoord.cpp: natoms = size;
+main.cpp:  for (size_t i = 0; i < pRef->natoms; i++)
+main.cpp://  pNode->element.resize(pNode->natoms);
+main.cpp://  pNode->coords.resize(3*pNode->natoms);  
+mol2xyz.cpp:  cout << "stophere  " << index.size() << endl;
+mol2xyz.cpp:  for(int i=0; i<index.size(); i++)
+mol2xyz.cpp:  for(int i=0; i<index.size();i++)
+mol2xyz.cpp:  for(int i=0; i<tmp_atom.size(); i++)
+mol2xyz.cpp:   int size = label.size();
+mol2xyz.cpp:   cout << "size of label:" << size << endl;
+mol2xyz.cpp:   for(int i =0; i < size; i++)
+mol2xyz.cpp:        if (xyzw.size() != 1) 
+mol2xyz.cpp:       if (xyzw.size() != 2)
+mol2xyz.cpp:        if (xyzw.size() != 3)
+mol2xyz.cpp:        if (xyzw.size() != 4)
+mopac.cpp:     for (int i=0; i < anames.size(); i++)
+mopac.cpp:  for (size_t i=0; i< pNode->data.natoms; i++)
+mopac.cpp:  for (size_t i=0; i < pNode->natoms; i++) frezlist[i]=0;
+mopac.cpp:  for (size_t i =0; i< joint.size(); i++)
+mopac.cpp:     for(size_t j=0; j< joint[i].size(); j++)
+mopac.cpp:  for (size_t i=0; i< pNode->natoms; i++)
+mopac.cpp:       for(size_t i=0; i < anames.size(); i++)
+mopac.cpp:     for(size_t i=0; i < pNode->natoms; i++)
+mopac.cpp:  size_t size = list.size();
+mopac.cpp:  size_t done = 0;
+mopac.cpp:  vector<int> mopacdone(size);
+mopac.cpp:    for (int i=0; i<size; i++)
+mopac.cpp:  } while(done != size);
+nbo.cpp:  for (int i=0;i<mheadersize;i++)
+nbo.cpp:  mo_occ.resize(nao);
+nbo.cpp:  bmo_occ.resize(nao);
+nbo.cpp:  bmo_atoms.resize(2*nao);
+nbo.cpp:  bmo_polar.resize(nao);
+nbo.cpp:  bmo_num.resize(nao);
+nbo.cpp:  vmo_occ.resize(nao);  
+nbo.cpp:  vmo_atoms.resize(2*nao);
+nbo.cpp:  vmo_num.resize(nao);
+nbo.cpp:   anumbers.resize(natoms);
+nbo.cpp:   anames.resize(natoms);
+nbo.cpp:   xyz.resize(3*natoms);
+nbo.cpp:   q.resize(natoms);
+nbo.cpp:  mheadersize = 4 + natoms;
+nbo.cpp:      mheadersize += 6;
+nbo.cpp:      mheadersize += 6;
+nbo.cpp:      mheadersize += 6; //CPMZ fix
+nbo.cpp://  mheader = new string[mheadersize];
+nbo.cpp:  mheader.resize(mheadersize);
+nbo.cpp:  MO.resize(nao*nao);
+nbo.cpp:      int nnew = tok_line.size();
+nbo.cpp:        nnew = tok_line.size() - 3;
+nbo.cpp:        int lsize = tok_line.size();
+nbo.cpp:        if (lsize<1) break;
+nbo.cpp:        else if (lsize==4)
+nbo.cpp:        else if (lsize>4)
+nbo.cpp:  wAO.resize(MAX_BASIS);
+nbo.cpp:  tAO.resize(MAX_BASIS);
+nbo.cpp:  mheadersize = 0;
+nbo.cpp:      mheadersize++;
+nbo.cpp:  mheader.resize(mheadersize+2);
+nbo.cpp://  mheader = new string[mheadersize+2];
+nbo.cpp:    if (mc>=mheadersize) break;
+nbo.cpp:  mheadersize += 2;
+nbo.cpp:        if (tok_line.size()>1)
+nbo.cpp:              if (tok_line.size()<1)
+nbo.cpp:  MO.resize(dim*nao);
+read_inp.cpp://  feature_list(hard_code, hard_code + sizeof(hard_code) / sizeof(int))
+read_inp.cpp:          for (size_t i=0; i < tok_line2.size(); i++)
+read_inp.cpp:       else if (line.find("population_size")!=string::npos)
+read_inp.cpp:          inp_ga.pop_size = atoi(tok_line[1].c_str());
+read_inp.cpp:  ref_xyz.anames.resize(ref_xyz.natoms);
+read_inp.cpp:  ref_xyz.coords.resize(3*ref_xyz.natoms);
+read_inp.cpp:  seed.name.resize(seed.natoms);
+read_inp.cpp:  seed.label.resize(seed.natoms);
+read_inp.cpp:  seed.coords.resize(3*seed.natoms);
+read_inp.cpp:  seed.nbranches = int(seed.xyzw.size());
+read_inp.cpp:  size_t natoms = unsigned(xyzf_ref.natoms);
+read_inp.cpp:         for (size_t i=0; i < tok_line2.size(); i++)
+read_inp.cpp:	 xyzf_ref.label.push_back(tmp2);      /*size == nlabels*/
+read_inp.cpp: for(size_t i=0; i < inpfiles.size() ; i++)
+read_inp.cpp:  size_t natom = unsigned(natoms);
+read_inp.cpp:       for (size_t i=0; i < tok_line2.size(); i++)
+read_inp.cpp:for  (size_t j =0; j < r_sym.size(); j++)
+simple_genetic.cpp:   for (size_t i=0; i< pNode->data.natoms; i++)
+simple_genetic.cpp:   int popsize = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   int size = 2*(ngen*popsize) + 1;
+simple_genetic.cpp:   cout << "size of hash_all:" << size << endl; 
+simple_genetic.cpp://   genehash_all.resize(size);
+simple_genetic.cpp:   size = 2*popsize + 1;
+simple_genetic.cpp:   cout << "size of hash_pop:" << size << endl;
+simple_genetic.cpp://   genehash_pop.resize(size);
+simple_genetic.cpp:   hash_record.resize(2*NUM_ALL_PERM+1);
+simple_genetic.cpp:  long size = hashtable.size();
+simple_genetic.cpp:  long key = BKDRHash(str) % size;
+simple_genetic.cpp:   long size = hash_record.size();
+simple_genetic.cpp:   long key = BKDRHash(pNode->data.gene) % size;
+simple_genetic.cpp:   long size = hashtable.size();
+simple_genetic.cpp:   long key = BKDRHash(genecode) % size;
+simple_genetic.cpp:   long size = hash_record.size();
+simple_genetic.cpp:// cout << size << endl;
+simple_genetic.cpp:   long key = BKDRHash(genecode) % size;
+simple_genetic.cpp:  int splice1 = Utils::randomi(splice_1.size()); 
+simple_genetic.cpp:  int splice2 = Utils::randomi(splice_2.size());
+simple_genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   int nextra = pool%2;    // if odd pop_size
+simple_genetic.cpp:  int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:    int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:    int right = wheel.size()-1;
+simple_genetic.cpp:   int  pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   double stepsize = wheel.back()/pool;
+simple_genetic.cpp:      random += stepsize;
+simple_genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   double stepsize = wheel.back()/pool;
+simple_genetic.cpp:     random += stepsize;
+simple_genetic.cpp:   int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   double stepsize = wheel.back()/pool;
+simple_genetic.cpp:     random += stepsize;
+simple_genetic.cpp:    int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp://  int pool = pInp->inpga.pop_size();  
+simple_genetic.cpp:   int bits = int(offspring.size());
+simple_genetic.cpp:   int bits = int(string.size());
+simple_genetic.cpp:     int gene_bits = int(gene.size());
+simple_genetic.cpp:  parents.resize(2);
+simple_genetic.cpp:  offsprings.resize(2);
+simple_genetic.cpp:  ptr_array.resize(pInp->inp_ga.pop_size);
+simple_genetic.cpp:  prob_array.resize(pInp->inp_ga.pop_size);
+simple_genetic.cpp:  select_list.resize(pInp->inp_ga.pop_size);
+simple_genetic.cpp:  permutation.resize(pInp->inp_ga.pop_size); 
+simple_genetic.cpp:  size_t ncats = target_list.size();
+simple_genetic.cpp:  size_t gene_bits = offspring.size();
+simple_genetic.cpp:  for (size_t i=0; i < ncats; i++)
+simple_genetic.cpp:      for (size_t j=1; (j<gene_bits) && (status == 0); j++)
+simple_genetic.cpp:  size_t ncats = target_list.size();
+simple_genetic.cpp:  size_t nvars = rcodes.size();
+simple_genetic.cpp:  for (size_t i=0; i < ncats; i++)
+simple_genetic.cpp:      for (size_t j=0; (j < nvars) && (status == 0) ; j++)
+simple_genetic.cpp:   for (size_t i=0; i < pNode->natoms; i++) frezlist[i]=0;
+simple_genetic.cpp:   for (size_t i =0; i< joint.size(); i++)
+simple_genetic.cpp:      for(size_t j=0; j< joint[i].size(); j++)
+simple_genetic.cpp:   for (int i=0; i< pInp->inp_ga.pop_size; i++)
+simple_genetic.cpp:  int pool = pInp->inp_ga.pop_size;
+simple_genetic.cpp:   size_t s = score_list.size();
+simple_genetic.cpp:   for(size_t j=0; j<s; j++)
+simple_genetic.cpp://  while (i != pInp->inp_ga.pop_size)
+simple_genetic.cpp:  while (i != pInp->inp_ga.pop_size)
+simple_genetic.cpp:   Mopac::mopac_genqsh(filedir, joblist);   //hard-coded for 0-gen case (joblist.size() = pop_size)
+simple_genetic.cpp:   for(size_t i = 0; i < pRef->natoms; i++)
+simple_genetic.cpp:    for (size_t j=0; j < pNode->natoms; j++)
+simple_genetic.cpp:             for (size_t i=0; i < pRef->natoms; i++)
+simple_genetic.cpp:          for (size_t i=0; i < pNode->natoms; i++)
+simple_genetic.cpp:        size_t size = tok_line.size();
+simple_genetic.cpp:        for (size_t i=0; i < size; i++)
+simple_genetic.cpp:  for (size_t i = 0; i < pRef->data.natoms; i++)
+simple_genetic.cpp:    for (size_t i = 0; i < pRef->data.natoms; i++)
+simple_genetic.cpp://    genehash_pop.resize(2*pInp->inp_ga.pop_size+1);
+stringtools.cpp:  for(size_t i = 0; i < s.length(); i++){
+stringtools.cpp:  size=Mindestlaenge des ergebnisstrings,
+stringtools.cpp:string StringTools::int2str(int integer, int size, const string spaceStr)
+stringtools.cpp:  for (int i=s.length(); i< size; i++)
+stringtools.cpp:  string::size_type where = value.find_last_not_of(" \t");
+stringtools.cpp:   string::size_type sbegin, send;
+stringtools.cpp:   // find size of string
+stringtools.cpp:   string::size_type sbegin, send;
+stringtools.cpp:   // find size of string
+stringtools.cpp:    string::size_type start_index, end_index;
+utils.cpp:int Diagonalize(double* A, double* eigen, int size){
+utils.cpp: // printf(" in diagonalize call, size: %i \n",size);
+utils.cpp:  int N = size;
+utils.cpp:  int LDA = size;
+utils.cpp:  for (int i=0;i<size;i++)
+utils.cpp:  for (int i=0;i<size;i++)
+utils.cpp:  for (int j=0;j<size;j++)
+utils.cpp:    A[i*size+j] = EVec[i*size+j];
+utils.cpp:int Diagonalize(double* A, double* eigenvecs, double* eigen, int size){
+utils.cpp:  printf(" in diagonalize call, size: %i \n",size);
+utils.cpp:  int N = size;
+utils.cpp:  int LDA = size;
+utils.cpp:  for (int i=0;i<size;i++)
+utils.cpp:  for (int j=0;j<size;j++)
+utils.cpp:    eigenvecs[i*size+j] = EVec[i*size+j];

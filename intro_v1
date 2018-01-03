@@ -1,0 +1,10 @@
+
+  1. including pool generation (mm/000/ff*.xyz)
+
+  2. run the MOPAC calculation
+
+  3. print the score in record file
+
+========  only modified in simplegenetic.cpp =======
+
+  
